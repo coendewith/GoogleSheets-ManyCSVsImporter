@@ -10,5 +10,5 @@ function importCSVs() {
     var csvData = Utilities.parseCsv(file.getBlob().getDataAsString());
     var range = decemberSheet.getRange(decemberSheet.getLastRow() + 1, 1, csvData.length, csvData[0].length);
     range.setValues(csvData);
-  },j
+  }
 }
